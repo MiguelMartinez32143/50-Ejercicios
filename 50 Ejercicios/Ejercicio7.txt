@@ -1,0 +1,17 @@
+# Programa que aplica un descuento del 10% si la compra supera $100
+# Se solicita el valor total de la compra
+precio_total = float(input("Ingresa el total de la compra: "))
+
+# Se calcula el descuento usando un condicional ternario
+#si el precio tota es mayor es mayor a 100 aplica el descuento del 10% si no el descuento es 0
+descuento = precio_total * 0.10 if precio_total > 100 else 0
+precio_final = precio_total - descuento
+
+# Se muestran los resultados
+if descuento > 0:
+    print(f"¡Felicidades! Tienes un descuento del 10%")
+    print(f"Descuento aplicado: ${descuento:.2f}")
+else:
+    print("No hay descuento disponible")
+
+print(f"Precio final: ${precio_final:.2f}")
